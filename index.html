@@ -1,17 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
-    <title>Document</title>
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>To Do App</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="head">What needs to be done <span>?</span></div>
 
+      <div class="inputBox">
+        <input type="text" class = "inputFields" placeholder="Input your task" />
+        <i class="fa-duotone fa-plus plusButton"></i>
+      </div>
 
+      <div class="todoList">
+        <div>
+          <input type="checkbox" id="done" name="task1" checked />
+          <label>Add your first task</label>
+          <i class="fa-solid fa-eraser deleteButton"></i>
+        </div>
+        <div>
+          <input type="checkbox" id="done" name="task2" />
+          <label>Delete your first task</label>
+          <i class="fa-solid fa-eraser deleteButton"></i>
+        </div>
+      </div>
+    </div>
 
     <script src="/app.js"></script>
-</body>
+  </body>
 </html>
