@@ -17,6 +17,7 @@
   font-size: 35px;
   margin-bottom: 25px;
   margin-top: 25px;
+  transition: all 1.5s ease;
 }
 
 .head span {
@@ -28,6 +29,7 @@
   width: 700px;
   font-size: 25px;
   margin-bottom: 10px;
+  transition: all 1.5s ease;
 }
 .inputBox input {
   box-sizing: border-box;
@@ -60,7 +62,7 @@
   background: rgba(255, 255, 255, 0.242);
   margin-bottom: 15px;
   border-radius: 25px;
-  
+  transition: all 1.5s ease;
 }
 .todoList div {
   margin-top: 5px;
@@ -83,3 +85,24 @@
   cursor: pointer;
 }
 
+
+@media (max-width: 740px){
+  .inputBox{
+    width: 500px;
+  }
+  .todoList{
+    width: 500px;
+  }
+}
+
+@media (max-width: 530px){
+  .inputBox{
+    width: 310px;
+  }
+  .todoList{
+    width: 310px;
+  }
+  .head{
+    font-size: 25px;
+  }
+}
