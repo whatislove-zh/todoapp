@@ -5,6 +5,10 @@ const plus = document.querySelector(".plusButton");
 const todoList = document.querySelector(".todoList");
 let deleteBtn = document.querySelectorAll(".deleteButton");
 
+//const sortAll = document.querySelector(".all")
+//const sortAct = document.querySelector(".active")
+//const sortCpl = document.querySelector(".complited")
+
 let counter = 2;
 
 //function for adding tasks
@@ -57,6 +61,13 @@ const deleteEvent = () => {
     deleteBtn[i].addEventListener("click", deleteTask);
   }
 };
+
+
+/*sortAll.addEventListener("click", () => {
+
+  sortAll.classList.add("sort")
+})*/
+
 
 window.addEventListener("load", checked);
 window.addEventListener("load", deleteEvent);
