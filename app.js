@@ -9,6 +9,9 @@ let counter = 2;
 
 //function for adding tasks
 const addTask = () => {
+  if (todoList.children.length == 15) {
+    alert("it's maximum tasks")
+  } else {
   const block = document.createElement("div");
   block.innerHTML = `<input type="checkbox" id="done" name="task1" />
     <label class = "label">${input.value}</label>
@@ -20,6 +23,7 @@ const addTask = () => {
   input.value = "";
   deleteEvent();
   checked();
+  }
 };
 
 //function for crossing the line
@@ -62,3 +66,5 @@ input.addEventListener("keydown", function (btn) {
     addTask();
   }
 });
+
+
