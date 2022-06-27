@@ -20,30 +20,28 @@
       <div class="head">What needs to be done <span>?</span></div>
 
       <div class="inputBox">
-        <input type="text" class = "inputFields" placeholder="Input your task" />
+        <input type="text" class="inputFields" placeholder="Input your task" />
         <i class="fa-duotone fa-plus plusButton"></i>
       </div>
 
       <div class="todoList">
-        <div>
-          <input type="checkbox" id="done" name="task1" checked />
+        <div class="sortAll sortCmp">
+          <input type="checkbox" id="done" checked />
           <label class="label">Add your first task</label>
           <i class="fa-solid fa-eraser deleteButton"></i>
         </div>
-        <div>
+        <div class="sortAll sortAct">
           <input type="checkbox" id="done" name="task2" />
           <label class="label">Delete your first task</label>
           <i class="fa-solid fa-eraser deleteButton"></i>
         </div>
       </div>
-      <!--
-        <div class="sortBlock">
+
+      <div class="sortBlock">
         <div class="all sort">All</div>
         <div class="active">Active</div>
-        <div class="complited">Complited</div>
-
-      </div>-->
-
+        <div class="completed">Complited</div>
+      </div>
     </div>
 
     <script src="/app.js"></script>
